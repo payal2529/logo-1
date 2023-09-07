@@ -1,0 +1,79 @@
+/* utility classes */
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diamond,
+.diamond-mini {
+    aspect-ratio: 1/1;
+    position: absolute;
+}
+
+.diamond-mini {
+    height: 50px;
+}
+
+/* logo building start */
+.logo {
+    width: 350px;
+    margin: 100px;
+    transform: rotate(45deg);
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo .inner-box {
+    width: 250px;
+    background-color: black;
+    border: 50px solid;
+    border-left-color: #a4d7a4;
+    border-right-color: #c4bda9;
+    border-top-color: #d77e4b;
+    border-bottom-color: #59abf9;
+}
+
+.logo .inner-box .content {
+    transform: rotate(-45deg);
+    flex-direction: column;
+    color: white;
+}
+
+.logo .inner-box .content h4 {
+    font-size: 40px;
+    font-weight: medium;
+    margin: 0
+}
+
+.logo .inner-box .content h4 span {
+    color: #d08b63;
+}
+
+.logo .inner-box .content p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.logo>div:nth-child(2) {
+    top: 0;
+    left: 0;
+    background-color: #a8684b;
+}
+
+.logo>div:nth-child(3) {
+    top: 0;
+    right: 0;
+    background-color: #a95c44;
+}
+
+.logo>div:nth-child(4) {
+    bottom: 0;
+    left: 0;
+    background-color: #4d87a6;
+}
+
+.logo>div:nth-child(5) {
+    bottom: 0;
+    right: 0;
+    background-color: #56aea9;
+}
